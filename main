@@ -1,0 +1,14 @@
+import pygame
+import sys
+pygame.init()
+
+sc=pygame.display.set_mode((400,400))
+def draw():
+    sc.fill((255,255,255))
+    sc.fill(pygame.Color("brown"),(10,10,60,60))
+    pygame.display.update()
+draw()
+while 1:
+    for i in pygame.event.get():
+        if i.type == pygame.QUIT:
+            sys.exit()
